@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body{
+  margin: 0;
+}
+.header {
+  border: 1px solid grey;
+  height: 80px;
+  width: 100%;
+  background-color: aquamarine;
+  padding: 20px;
+}
+#full{
+  display: flex;
+}
+.sidebar {
+  width: 20%;
+  height: 600px;
+  border: 1px solid grey;
+}
+.content {
+  width: 80%;
+  height: 600px;
+  border: 1px solid grey;
+}
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
