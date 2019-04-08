@@ -2,31 +2,125 @@
   font-family: sans-serif;
   text-align: center;
 }
-body{
+body, #root, .header, #main{
   margin: 0;
 }
 .header {
-  border: 1px solid grey;
-  height: 80px;
-  width: 100%;
-  background-color: aquamarine;
+  height: 30px;
+  width: 96%;
+  background-color: #22a7f0;
   padding: 20px;
+}
+.header h1 {
+  margin: 0;
 }
 #full{
   display: flex;
 }
-.sidebar {
-  width: 20%;
-  height: 600px;
-  border: 1px solid grey;
-}
+
 .content {
   width: 80%;
-  height: 600px;
-  border: 1px solid grey;
 }
 .cart {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 10px;
+}
+.cart img{
+  width: 60px;
+  height: 50px;
+}
+.category, .subcategory {
+  border: 1px solid#cde9f8;
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.subcategory a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.category:hover, .subcategory:hover {
+  background: #9fdafa;
+}
+.sidebar h3,
+.content h3{
+  text-align: center;
+}
+@keyframes slider {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 209px;
+  }
+}
+
+.category:hover .subcat{
+  position: relative;
+  display: inline-block;
+  top: -30px;
+  left: 209px;
+  transition: 1s;
+  animation: slider 0.5s forwards;
+}
+
+.subcat{
+  display: none;
+}
+.produs {
+  box-shadow: 1px 2px 11px #00000033;
+  background-color: white;
+  max-width: 22%;
+  text-align: center;
+  padding: 0 7px;
+  margin: 8px auto;
+  border-radius: 4px;
+  transition: 1s;
+}
+.produs .title{
+  color: #055be4;
+}
+.produs:hover {
+  box-shadow: 3px 2px 17px 3px #474747a9;
+}
+.produs img{
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3px;
+}
+.produs p{
+  margin: -10px auto 10px;
+}
+.produs h4{
+  margin: -2px auto 10px;
+}
+.products{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.button{
+  background-color: #22a7f0;
+  width: 96%;
+  height: 40px;
+  border-radius: 4px;
+  line-height: 40px;
+  color: white;
+  margin: 0 auto 10px;
+  font-size: 120%;
+  box-shadow: 1px 2px 6px #00000033;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #067dbd;
+  box-shadow: 2px 3px 6px 3px #0000004f;
+}
+.categ {
+  background-color: #88d5ff21;
+  border-top: 2px solid rgb(235, 235, 235);
 }

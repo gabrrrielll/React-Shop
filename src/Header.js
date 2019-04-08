@@ -3,9 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <h2> Market</h2>
+      <h1> Market</h1>
       <div className="cart">
-      Nr.produse:
+      <img src="http://www.logospng.com/images/104/shopping-cart-flat-icon-page-3-104468.png" alt="cart"/>
       </div>
     </div>
   );

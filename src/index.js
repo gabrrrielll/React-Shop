@@ -1,23 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import marketContext from "./marketContext";
-import cartContext from "./cartContext";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
-
 import "./styles.css";
 
-function Market() {
+class Market extends React.Component  {
+  static contextType = marketContext;
+
+  render(){
+
   return (
-    <div>
+    <div id="main">
       <Header />
       <div id="full">
         <Sidebar />
-        <Content />
+        <Content date={this.context} />
       </div>
     </div>
   );
+
+  }
+ 
 }
 
 const rootElement = document.getElementById("root");
