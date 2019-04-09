@@ -3,7 +3,6 @@ import marketContext from "./marketContext";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import {subCatContext} from "./index";
 
-
  function Display(param) {
   console.log(param);
   return  (
@@ -12,7 +11,6 @@ import {subCatContext} from "./index";
     </div>
   );
 }
-
 
 const Subcategory = (props) =>{
   const market= React.useContext(marketContext);
@@ -60,6 +58,5 @@ const Sidebar = () => {
     </div>
   ) 
 };
-
 
 export default Sidebar;

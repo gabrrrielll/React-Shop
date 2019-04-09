@@ -22,7 +22,6 @@ const Market = () => {
   return (
     <div id="main">
       <cartContext.Provider value= { [ cart, updateCart ] } >
-        
         <Header />
         <div id="full">
         <subCatContext.Provider value= { [ subCat, updateSub ] } >
@@ -30,7 +29,6 @@ const Market = () => {
           <Content />
         </subCatContext.Provider>
         </div>
-        
       </cartContext.Provider>  
     </div>
   );
