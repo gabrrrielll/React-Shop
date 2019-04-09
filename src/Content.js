@@ -1,16 +1,22 @@
-import React from "react";
-
+import marketContext from "./marketContext";
+import React from 'react';
+import {cartContext} from "./index";
+import {subCatContext} from "./index";
 
 const Content = (props) => {
+  const market= React.useContext(marketContext);
+  const [ cart, updateCart ] = React.useContext (cartContext);
+  const [subCat, updateSub] = React.useContext (subCatContext);
 
   return(
     <div className="content">
-        <h3 > Produse</h3>
-            {props.date.map( (categorie, index) =>{
+    
+        <h3 >{subCat}</h3>
+            {market.map( (categorie, index) =>{
                                     return(
                                     <div className="categ" 
                                               key={index} >
-
+                                             
                                               {categorie.subCategorii.map( (sub, index) =>{
                                                                     return(
                                                                     <div className="products" 
@@ -25,7 +31,8 @@ const Content = (props) => {
                                                                                                   <h4> Pret: {prod.pret} </h4>
                                                                                                   <p>Stoc: {prod.numarProduse}</p>
                                                                                                   <div className="button" 
-                                                                                                  onClick={ ()=>inCart(prod.idProdus) }>Adauga in cos</div>  
+                                                                                                  onClick={() => updateCart(cart + 1)}
+                                                                                                  >Adauga in cos</div>
                                                                                         </div>
                                                                                         )
                                                                                       }
@@ -40,20 +47,11 @@ const Content = (props) => {
                                     )
                                   }
                               )                               
-            }        
+            }      
     </div>
   ) 
 
-
-
 }
 
-
-function inCart (key) {
-  return(
-    console.log(key)
-
-  )
-  }
 export default Content;
 

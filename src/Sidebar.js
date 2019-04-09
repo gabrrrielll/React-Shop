@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 import marketContext from "./marketContext";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import {subCatContext} from "./index";
 
 
-export function Display(param) {
- // console.log(param);
+ function Display(param) {
+  console.log(param);
   return  (
     <div className="content">
     
@@ -12,8 +13,10 @@ export function Display(param) {
   );
 }
 
+
 const Subcategory = (props) =>{
   const market= React.useContext(marketContext);
+  const [subCat, updateSub] = React.useContext (subCatContext);
   return(
     <div className="subcat" >
     <BrowserRouter>
@@ -21,10 +24,12 @@ const Subcategory = (props) =>{
  
             return(
             <div className="subcategory" 
-                    key={market[props.index].subCategorii.indexOf(sub)}  > 
+                    key={market[props.index].subCategorii.indexOf(sub)} 
+                    onClick={ ()=> updateSub(sub.numeSubcategorie)  } > 
                      <Link to={ sub.numeSubcategorie } >{ sub.numeSubcategorie } </Link>
                      <Route exact path={"/"+ sub.numeSubcategorie } 
-                       component={ ()=> Display(sub.numeSubcategorie)  } />         
+                      // component={ ()=> Display(sub.numeSubcategorie)  }
+                        />         
             </div>
               )
             }

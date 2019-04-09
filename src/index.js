@@ -1,28 +1,40 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import ReactDOM from "react-dom";
-import marketContext from "./marketContext";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
 import "./styles.css";
 
-class Market extends React.Component  {
-  static contextType = marketContext;
+export const cartContext = React.createContext();
+export const subCatContext = React.createContext();
 
-  render(){
+const Market = () => {
+  var cos = {
+    numeProdus: "",
+    imgProdus: "",
+    pretProdus: 0,
+    nrProduse: 0,
+    pretTotal: 0
+  }
+  const [cart, updateCart] = useState(0);
+  const [subCat, updateSub] = useState("Toate produsele");
 
   return (
     <div id="main">
-      <Header />
-      <div id="full">
-        <Sidebar />
-        <Content date={this.context} />
-      </div>
+      <cartContext.Provider value= { [ cart, updateCart ] } >
+        
+        <Header />
+        <div id="full">
+        <subCatContext.Provider value= { [ subCat, updateSub ] } >
+          <Sidebar />
+          <Content />
+        </subCatContext.Provider>
+        </div>
+        
+      </cartContext.Provider>  
     </div>
   );
 
-  }
- 
 }
 
 const rootElement = document.getElementById("root");
