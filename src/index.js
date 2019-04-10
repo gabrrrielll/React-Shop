@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./styles.css";
 
 export const cartContext = React.createContext();
@@ -17,19 +18,26 @@ const Market = () => {
     pretTotal: 0
   }
   const [cart, updateCart] = useState(0);
-  const [subCat, updateSub] = useState("Toate produsele");
-
+  const [[subCat, idCat, idSub], updateSub] = useState([]);
+  //console.log(window.location.href)
+    var x =idCat;
+    var y =idSub;
   return (
     <div id="main">
+    <BrowserRouter>
       <cartContext.Provider value= { [ cart, updateCart ] } >
         <Header />
         <div id="full">
-        <subCatContext.Provider value= { [ subCat, updateSub ] } >
+        <subCatContext.Provider value= { [[subCat, idCat, idSub], updateSub ] } >
           <Sidebar />
-          <Content />
+          <Route  path="/categorie/:x/subcategorie/:y"
+                       component={ ()=> Content([x, y])  }
+                        />
+         {console.log(x)}
         </subCatContext.Provider>
         </div>
-      </cartContext.Provider>  
+      </cartContext.Provider> 
+      </BrowserRouter> 
     </div>
   );
 

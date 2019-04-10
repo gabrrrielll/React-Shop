@@ -3,40 +3,6 @@ import marketContext from "./marketContext";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import {subCatContext} from "./index";
 
- function Display(param) {
-  console.log(param);
-  return  (
-    <div className="content">
-    
-    </div>
-  );
-}
-
-const Subcategory = (props) =>{
-  const market= React.useContext(marketContext);
-  const [subCat, updateSub] = React.useContext (subCatContext);
-  return(
-    <div className="subcat" >
-    <BrowserRouter>
-       {market[props.index].subCategorii.map( (sub) =>{
- 
-            return(
-            <div className="subcategory" 
-                    key={market[props.index].subCategorii.indexOf(sub)} 
-                    onClick={ ()=> updateSub(sub.numeSubcategorie)  } > 
-                     <Link to={ sub.numeSubcategorie } >{ sub.numeSubcategorie } </Link>
-                     <Route exact path={"/"+ sub.numeSubcategorie } 
-                      // component={ ()=> Display(sub.numeSubcategorie)  }
-                        />         
-            </div>
-              )
-            }
-           )
-         }
-      </BrowserRouter>
-    </div>
-  )
-}
 
 const Sidebar = () => {
   const market= React.useContext(marketContext); 
@@ -49,7 +15,7 @@ const Sidebar = () => {
                                     <div className="category" 
                                               key={index} >
                                               {categorie.numeCategorie}
-                                              <Subcategory index={index}  />
+                                              <Subcategory index={index} />
                                     </div>
                                     )
                                   }
@@ -58,5 +24,29 @@ const Sidebar = () => {
     </div>
   ) 
 };
+
+const Subcategory = (props) =>{
+  const market= React.useContext(marketContext);
+  const [[subCat, idCat, idSub], updateSub] = React.useContext (subCatContext);
+  return(
+    <div className="subcat" >
+   
+       {market[props.index].subCategorii.map( (sub) =>{
+            var idSub=market[props.index].subCategorii.indexOf(sub);
+            return(
+            <div className="subcategory" 
+                    key={idSub} 
+                    onClick={ ()=> updateSub([sub.numeSubcategorie, props.index, idSub])  } >  
+                     <Link to={ "/categorie/" + props.index+ "/subcategorie/" + idSub } >{ sub.numeSubcategorie } </Link>
+                           
+            </div>
+              )
+            }
+           )
+         }
+    
+    </div>
+  )
+}
 
 export default Sidebar;
