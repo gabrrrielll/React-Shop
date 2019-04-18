@@ -1,13 +1,13 @@
 {
-  "main.css": "/React-Shop/static/css/main.6f95dcbe.chunk.css",
-  "main.js": "/React-Shop/static/js/main.02d0e6f3.chunk.js",
-  "main.js.map": "/React-Shop/static/js/main.02d0e6f3.chunk.js.map",
+  "main.css": "/React-Shop/static/css/main.965582d2.chunk.css",
+  "main.js": "/React-Shop/static/js/main.8ee1a96b.chunk.js",
+  "main.js.map": "/React-Shop/static/js/main.8ee1a96b.chunk.js.map",
   "runtime~main.js": "/React-Shop/static/js/runtime~main.ee72ac26.js",
   "runtime~main.js.map": "/React-Shop/static/js/runtime~main.ee72ac26.js.map",
-  "static/js/2.eeef88a5.chunk.js": "/React-Shop/static/js/2.eeef88a5.chunk.js",
-  "static/js/2.eeef88a5.chunk.js.map": "/React-Shop/static/js/2.eeef88a5.chunk.js.map",
+  "static/js/2.a9e494ff.chunk.js": "/React-Shop/static/js/2.a9e494ff.chunk.js",
+  "static/js/2.a9e494ff.chunk.js.map": "/React-Shop/static/js/2.a9e494ff.chunk.js.map",
   "index.html": "/React-Shop/index.html",
-  "precache-manifest.d29f5527e1e1f92b4b4a20891eacc656.js": "/React-Shop/precache-manifest.d29f5527e1e1f92b4b4a20891eacc656.js",
+  "precache-manifest.947e876a51eb25312fac0ae070be2b3d.js": "/React-Shop/precache-manifest.947e876a51eb25312fac0ae070be2b3d.js",
   "service-worker.js": "/React-Shop/service-worker.js",
-  "static/css/main.6f95dcbe.chunk.css.map": "/React-Shop/static/css/main.6f95dcbe.chunk.css.map"
+  "static/css/main.965582d2.chunk.css.map": "/React-Shop/static/css/main.965582d2.chunk.css.map"
 }
