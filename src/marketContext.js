@@ -105,7 +105,7 @@ export default React.createContext(
                             imagine: "https://s12emagst.akamaized.net/products/18712/18711568/images/res_7a624a7c7b854c541ba8b55285878387_200x200_jrh5.jpg"    
                         },
                         {
-                            idProdus: 6543,
+                            idProdus: 65423,
                             numeProdus: "Laptop Gaming ASUS TUF FX504GM-E4065 cu procesor Intel® Core™ i7-8750H",
                             pret: 4300,
                             numarProduse: 4,
@@ -117,6 +117,41 @@ export default React.createContext(
                 numeSubcategorie: "Telefoane mobile",
                 produse: [
                     {
+                        idProdus: 85603,
+                        numeProdus: "Apple iPhone",
+                        pret: 6545,
+                        numarProduse: 10,
+                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
+                    },
+                    {
+                        idProdus: 85873,
+                        numeProdus: "Apple iPhone",
+                        pret: 6545,
+                        numarProduse: 10,
+                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
+                    },
+                    {
+                        idProdus: 85663,
+                        numeProdus: "Apple iPhone",
+                        pret: 6545,
+                        numarProduse: 10,
+                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
+                    },
+                    {
+                        idProdus: 85063,
+                        numeProdus: "Apple iPhone",
+                        pret: 6545,
+                        numarProduse: 10,
+                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
+                    },
+                    {
+                        idProdus: 85963,
+                        numeProdus: "Apple iPhone",
+                        pret: 6545,
+                        numarProduse: 10,
+                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
+                    },
+                    {
                         idProdus: 8563,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
@@ -124,49 +159,14 @@ export default React.createContext(
                         imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
                     },
                     {
-                        idProdus: 8573,
+                        idProdus: 75742,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
                         imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
                     },
                     {
-                        idProdus: 8563,
-                        numeProdus: "Apple iPhone",
-                        pret: 6545,
-                        numarProduse: 10,
-                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
-                    },
-                    {
-                        idProdus: 8563,
-                        numeProdus: "Apple iPhone",
-                        pret: 6545,
-                        numarProduse: 10,
-                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
-                    },
-                    {
-                        idProdus: 8563,
-                        numeProdus: "Apple iPhone",
-                        pret: 6545,
-                        numarProduse: 10,
-                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
-                    },
-                    {
-                        idProdus: 8563,
-                        numeProdus: "Apple iPhone",
-                        pret: 6545,
-                        numarProduse: 10,
-                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
-                    },
-                    {
-                        idProdus: 7542,
-                        numeProdus: "Apple iPhone",
-                        pret: 6545,
-                        numarProduse: 10,
-                        imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
-                    },
-                    {
-                        idProdus: 5463,
+                        idProdus: 54663,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
@@ -184,14 +184,14 @@ export default React.createContext(
                 numeSubcategorie: "Desktop PC",
                 produse: [
                     {
-                        idProdus: 8563,
+                        idProdus: 85623,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
                         imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
                     },
                     {
-                        idProdus: 8563,
+                        idProdus: 85563,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
@@ -223,14 +223,14 @@ export default React.createContext(
                 numeSubcategorie: "Desktop PC & Monitoare",
                 produse: [
                     {
-                        idProdus: 8563,
+                        idProdus: 85633,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
                         imagine: "https://s12emagst.akamaized.net/products/17043/17042928/images/res_8281d5af26dba025318854c94324776e_200x200_3gi9.jpg"    
                     },
                     {
-                        idProdus: 8563,
+                        idProdus: 85613,
                         numeProdus: "Apple iPhone",
                         pret: 6545,
                         numarProduse: 10,
