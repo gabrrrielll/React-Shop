@@ -8,6 +8,7 @@ import "./styles.css";
 
 export const cartContext = React.createContext();
 export const subCatContext = React.createContext();
+export const flyContext = React.createContext();
 
 const Market = () => {
   var cos = {
@@ -19,6 +20,7 @@ const Market = () => {
   }
   const [cart, updateCart] = useState([]);
   const [[subCat, idCat, idSub], updateSub] = useState([]);
+  const [fly, updateFly] = React.useState("xx-");
   
     var x = window.location.pathname.slice(11,12);
     //=idCat;
@@ -32,6 +34,7 @@ const Market = () => {
         <div id="full">
         <subCatContext.Provider value= { [[subCat, idCat, idSub], updateSub ] } >
           <Sidebar />
+          <flyContext.Provider value= { [fly, updateFly] } >
           <Switch>
           <Route  exact path="/categorie/:x/subcategorie/:y"
                        component={ ()=> Content([x, y])  }
@@ -42,6 +45,7 @@ const Market = () => {
         
         <Route path="*" render={() => <h1> 404 Error! </h1>} />
         </Switch>
+        </flyContext.Provider>
         </subCatContext.Provider>
         </div>
       </cartContext.Provider> 
