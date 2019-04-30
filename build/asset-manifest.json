@@ -1,5 +1,5 @@
 {
-  "main.css": "/React-Shop/static/css/main.d67e92c1.chunk.css",
+  "main.css": "/React-Shop/static/css/main.fb4802f5.chunk.css",
   "main.js": "/React-Shop/static/js/main.bfe6ccae.chunk.js",
   "main.js.map": "/React-Shop/static/js/main.bfe6ccae.chunk.js.map",
   "runtime~main.js": "/React-Shop/static/js/runtime~main.ee72ac26.js",
@@ -7,7 +7,7 @@
   "static/js/2.fc42a64e.chunk.js": "/React-Shop/static/js/2.fc42a64e.chunk.js",
   "static/js/2.fc42a64e.chunk.js.map": "/React-Shop/static/js/2.fc42a64e.chunk.js.map",
   "index.html": "/React-Shop/index.html",
-  "precache-manifest.8db6def6ab36b78335f8deb827d74d1c.js": "/React-Shop/precache-manifest.8db6def6ab36b78335f8deb827d74d1c.js",
+  "precache-manifest.aa3352d8b7344e8b50a39c50d6f4e17c.js": "/React-Shop/precache-manifest.aa3352d8b7344e8b50a39c50d6f4e17c.js",
   "service-worker.js": "/React-Shop/service-worker.js",
-  "static/css/main.d67e92c1.chunk.css.map": "/React-Shop/static/css/main.d67e92c1.chunk.css.map"
+  "static/css/main.fb4802f5.chunk.css.map": "/React-Shop/static/css/main.fb4802f5.chunk.css.map"
 }

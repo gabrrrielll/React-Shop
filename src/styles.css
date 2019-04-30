@@ -238,7 +238,6 @@ span.tot {
   position: absolute;
   top:0;
   z-index: 2;
-  max-width: 90%;
   margin: auto;
-  margin-bottom: 3px;
+ 
 }
