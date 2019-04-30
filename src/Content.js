@@ -65,9 +65,11 @@ const FlyerCart = () =>{
  
     var flying = keyframes`
           0% {top:0; right: 0; } 
+          0% {opacity: 0.9; } 
           5% { transform: scale(1.8, 1.8);}
           100% { transform: scale(0.2, 0.2);}
-        100% {top:  ${fly.y}px; right: ${fly.x}px; } 
+          100% {top:  ${fly.y}px; right: ${fly.x}px; } 
+          100% {opacity: 0.2; } 
           `
     const animation = css `
            ${flying} 1s linear ;

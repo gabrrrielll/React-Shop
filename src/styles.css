@@ -236,44 +236,9 @@ span.tot {
 }
 .Flyer{
   position: absolute;
-  float:right;
   top:0;
-
-
-z-index: 2;
-max-width: 90%;
-margin: auto;
+  z-index: 2;
+  max-width: 90%;
+  margin: auto;
   margin-bottom: 3px;
 }
-.flyer {
- 
- 
-}
-.flyer img {
- opacity: 0.8;
-  
- }/*
-@keyframes fly {
-  0% {
-    top:-200px;
-    right: -400px;
-  }
-  100% {
-    top: 0;
-    right: 0;
-  }
-
-
-
-        "animation": "fly 6s forwards",
-            "@keyframes flfy": {
-              "0%" :{
-              " top": "120px",
-                "right": "140px"
-              },
-            " 100% ":{
-              " top": "0",
-                "right": "0"
-              }
-            },
-} */
