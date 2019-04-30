@@ -20,7 +20,7 @@ const Market = () => {
   }
   const [cart, updateCart] = useState([]);
   const [[subCat, idCat, idSub], updateSub] = useState([]);
-  const [fly, updateFly] = React.useState("xx-");
+  const [fly, updateFly] = React.useState();
   
     var x = window.location.pathname.slice(11,12);
     //=idCat;

@@ -79,7 +79,7 @@ const Header = () => {
     <div className="header">
     <Link to={ "/"  } ><h1> Market</h1> </Link>
    
-      <div className="cart" onClick={ ()=>upCart()} >
+      <div id="cart" onClick={ ()=>upCart()} >
       <div className="count">{nrProd} </div>
         <img src="http://www.logospng.com/images/104/shopping-cart-flat-icon-page-3-104468.png" alt="cart"/>
       </div>
